@@ -180,6 +180,20 @@
     left: 0;
     width: 250px;
     height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0) , #fff);
+    z-index: 2;
+    content: "";
+  }
+
+  .logos-slider::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) , #fff);
+    z-index: 2;
+    content: "";
   }
 
   .logos-slider .logos img{
@@ -306,9 +320,10 @@
     gap: 20px;
   }
 
-  .about-button-group button{
-    flex: 0 0 20%;
+  .about-button-group a{
+    /* flex: 0 0 20%; */
     justify-content: center;
+    text-decoration: none;
   }
 
   /* PROJECTS CSS */
@@ -416,13 +431,6 @@
   .projects-img-wrap{
     position: relative;
   }
-
-  /* img.bb-tag{
-    width: 90px !important;
-    height: 90px !important;
-  } */
-
-  /* PROJECTS - SLIDER CSS */
  
 
   /* CONTACT CSS */
@@ -476,6 +484,11 @@
     color: #fff;
     margin-top: 20px;
     padding: 10px 30px;
+    transition: all 0.3s;
+  }
+
+  .input-btn:hover{
+    background-color: #307CE6;
   }
 
   .form-bottom{
@@ -541,6 +554,15 @@
   
   .custom-button-1:active::after {
     bottom: 3px;
+  }
+
+  .custom-button-1 a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
   }
   
   .button_lg {
@@ -941,6 +963,10 @@
 
     .about-section .info-box{
       flex: 0 0 85% !important;
+    }
+
+    .about-button-group a{
+      flex: 0 0 20% !important;
     }
 
     .info-box{
