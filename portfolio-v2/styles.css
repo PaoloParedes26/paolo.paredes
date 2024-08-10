@@ -711,6 +711,12 @@
   }
 
   /* MEDIA QUERIES */
+  @media (max-width:1587px){
+    .info-list li{
+      font-size: 14px !important;
+    }
+  }
+
   @media(max-width:1400px){
     .about-section{
       padding-inline: 30px !important;
